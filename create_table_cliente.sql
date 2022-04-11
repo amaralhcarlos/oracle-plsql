@@ -15,4 +15,7 @@ ALTER TABLE cliente
 ADD
     CONSTRAINT fk_segmercado_id FOREIGN key(segmercado_id) REFERENCES segmercado(id);
 
+ALTER TABLE cliente
+ADD cnpj VARCHAR2(20);
+
 DROP TABLE cliente;
