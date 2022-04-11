@@ -8,15 +8,11 @@ CREATE TABLE
         categoria VARCHAR2(20)
     );
 
-ALTER TABLE
-    cliente
-ADD
-    CONSTRAINT pk_cliente_id PRIMARY key(id);
+ALTER TABLE cliente
+ADD CONSTRAINT pk_cliente_id PRIMARY key(id);
 
-ALTER TABLE
-    cliente
+ALTER TABLE cliente
 ADD
     CONSTRAINT fk_segmercado_id FOREIGN key(segmercado_id) REFERENCES segmercado(id);
 
-DROP TABLE
-    cliente;
+DROP TABLE cliente;

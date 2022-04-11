@@ -6,10 +6,7 @@ CREATE TABLE
     );
 
 --Criando a chave primária manualmente sem usar o comando PRIMARY KEY diretamente na tabela.
-ALTER TABLE
-    segmercado
-ADD
-    CONSTRAINT pk_segmercado_id PRIMARY key(id);
+ALTER TABLE segmercado
+ADD CONSTRAINT pk_segmercado_id PRIMARY key(id);
 
-DROP TABLE
-    segmercado;
+DROP TABLE segmercado;
